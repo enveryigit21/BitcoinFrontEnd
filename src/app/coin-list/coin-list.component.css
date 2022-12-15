@@ -1,0 +1,72 @@
+.header{
+    height: 40%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+}
+.header h2 {
+    font-weight: bold;
+    margin-bottom:  15px;
+    font-size: 3.75rem;
+    line-height: 1.2;
+    letter-spacing: -0.0083em;
+}
+.header h6 {
+    color: darkgray;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+}
+.banner {
+    background-image: url("https://raw.githubusercontent.com/yshashi/crypto-checker-yt/master/src/assets/banner2.jpg");
+    height: 400px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.sub-header {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    border: 0;
+    background: transparent;
+    color: #fff;
+    margin: 40px;
+    width: 100px;
+    height: 200px;
+
+}
+img {
+    width: 70px;
+    margin: 0 auto;
+}
+.card  h5 {
+    font-weight: 500;
+}
+.card-text{
+    font-weight: 400;
+}
+
+table {
+    width: 100%;
+  }
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  td, th {
+    width: 25%;
+  }
+
+.mat-sort-header-container {
+    align-items: center;
+  }

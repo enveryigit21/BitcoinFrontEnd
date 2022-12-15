@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 details">
+        <div class="img">
+            <img [src]="coinData?.image?.large" alt="">
+            <h3 style="font-size: 23px; " class="text-center my-4">
+                         {{coinData?.name}}
+            </h3>
+            <h2 [innerHtml] = "coinData?.description.en.split('.')[0]"></h2>
+            <div class="more-detail">
+               <h3> <span class="tite"> Rank :</span> <span>{{coinData?.market_cap_rank}}</span> <br>
+                <span class="tite"> Current Price :</span> <span>{{coinData?.market_data.current_price.inr | currency : currency}}</span> <br>
+                <span class="tite"> Market Cap :</span> <span>{{coinData?.market_data.market_cap.inr | currency : currency}}</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+   <canvas style="width: 300px;"  baseChart [data] = "lineChartData" [options]="lineChartOptions" [type]="lineChartType"></canvas>
+
+   <div class="d-flex justify-content-around">
+    <button style="color: black; border :  1px solid gray ; " (click)="getGraphData(1)" class="btn btn-custom">24 hours</button>
+    <button  style="color: black; border :  1px solid gray ; " (click)="getGraphData(30)" class="btn btn-custom">30 days</button>
+    <button  style="color: black; border :  1px solid gray ; " (click)="getGraphData(90)" class="btn btn-custom">90 days</button>
+    <button  style="color: black; border :  1px solid gray ; " (click)="getGraphData(365)" class="btn btn-custom">1 year</button>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
